@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> Renders no section active by default 1`] = `
+<div>
+  <ul>
+    <li>
+       
+      <button
+        onClick={[Function]}
+      >
+         
+      </button>
+       
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<Accordion /> renders an empty li when the sections prop is not supplied. 1`] = `
+<div>
+  <ul>
+    <li>
+       
+      <button
+        onClick={[Function]}
+      >
+         
+      </button>
+       
+    </li>
+  </ul>
+</div>
+`;
