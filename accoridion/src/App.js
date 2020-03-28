@@ -1,36 +1,37 @@
 import React from 'react';
 
 import './App.css';
-import Accordion from './components/accoridion/accordion';
+import Accordion from './components/Accordion/accordion';
 class App extends React.Component {
-	constructor () {
+	constructor() {
 		super();
 		this.state = {
-			sections : [
+			sections: [
 				{
-					title   : 'Section 1',
-					content : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+					title: 'Section 1',
+					content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
 				},
 				{
-					title   : 'Section 2',
-					content : 'Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!'
+					title: 'Section 2',
+					content: 'Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!'
 				},
 				{
-					title   : 'Section 3',
-					content : 'Animi amet cumque sint cupiditate officia ab voluptatibus libero optio et?'
+					title: 'Section 3',
+					content: 'Animi amet cumque sint cupiditate officia ab voluptatibus libero optio et?'
 				}
 			],
-			render   : false
+			render: false
 		};
 	}
-	setRender = () => {
-		this.setState({ render: !this.state.render });
-	};
+	
 
-	render () {
+	render() {
 		return (
 			<div className='App'>
-				<Accordion section={this.state.sections} render={this.state.render} setRender={this.setRender} />
+				{this.state.sections.map((section) => (
+					<Accordion section={section} />
+				))}
+
 			</div>
 		);
 	}
