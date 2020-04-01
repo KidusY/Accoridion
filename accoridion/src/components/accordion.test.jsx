@@ -18,12 +18,10 @@ describe('<Accordion />', () => {
 		expect(toJson(wrapper)).toMatchSnapshot();
 	});
 	it('Opens a clicked section', () => {
-    const wrapper = shallow(<Accordion sections={sectionsProp} />);
-    	console.log('>>> FIND(BUTTON) <<<');
+		const wrapper = shallow(<Accordion sections={sectionsProp} />);
+		console.log('>>> FIND(BUTTON) <<<');
 		console.log(wrapper.find('button').debug());
-		wrapper.find('button').at(1).simulate('click');
-	
-
+		wrapper.find('button').at(0).simulate('click');
 		expect(toJson(wrapper)).toMatchSnapshot();
 	});
 });

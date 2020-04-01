@@ -1,5 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Accordion /> Opens a clicked section 1`] = `
+<div>
+  <ul>
+    <li>
+       
+      <button
+        onClick={[Function]}
+      >
+         
+      </button>
+       
+    </li>
+    <li>
+      <p />
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`<Accordion /> Renders no section active by default 1`] = `
 <div>
   <ul>
